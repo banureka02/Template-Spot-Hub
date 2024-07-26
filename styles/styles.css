@@ -1,0 +1,202 @@
+body {
+    background-color: #e8eaf6;
+}
+
+.topbar {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+}
+
+/* .topbar-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} */
+
+.search-container input {
+    padding-left: 20px;
+    height: 36px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #3949ab;
+}
+
+.search-container button {
+    height: 42px;
+    width: 50px;
+    background-color: #5c6bc0;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.search-container button:hover {
+    filter: brightness(85%);
+    background-color: darken(#5c6bc0);
+}
+/* .logo {
+    width: 10vw;
+    height: 7vh;
+} */
+
+
+.signup-button {
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    background: radial-gradient( 100% 100% at 100% 0%, #7986cb 0%, #3f51b5 100% );
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+    padding: 0 32px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    height: 45px;
+    width: 128x;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+
+.signup-button:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #e8eaf6;
+    transform: translateY(-2px);
+}
+
+.signup-button:active{
+    box-shadow: inset 0px 3px 7px #e8eaf6;
+    transform: translateY(2px);
+}
+
+.login-button {
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+    padding: 0 32px;
+    border-radius: 6px;
+    color: #3f51b5;
+    font-weight: 600;
+    height: 45px;
+    width: 128x;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+
+.login-button:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+    transform: translateY(-2px);
+}
+
+.login-button:active{
+    box-shadow: inset 0px 3px 7px #3c4fe0;
+    transform: translateY(2px);
+}
+
+.main-container {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: linear-gradient(0.25turn, #e0f7fa, #e8eaf6); */
+    background-color: #c5cae9;
+}
+.quote {
+    font-size: 3em;
+    letter-spacing: -0.5px;
+    max-width: 70vw;
+    text-align: center;
+}
+
+.main-container p {
+    font-size: 1.75em;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.get-started {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    background: #FCFCFD;
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #3f51b5;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+
+.get-started:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    transform: translateY(-2px);
+}
+
+.get-started:active{
+    box-shadow: inset 0px 3px 7px #d6d6e7;
+    transform: translateY(2px);
+}
+
+.main-container button {
+    margin-top: 5vh;
+    height: 5vh;
+    width: 10vw;
+}
+
+:root {
+  --primary-color: #3f51b5;
+  --light-color: #e8eaf6;
+}
+
+.marquee-container {
+  height: 25vh;
+  margin-top: 5vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); 
+  gap: 15px; 
+  background-color: var(--light-color);
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.image-wrapper img {
+  padding: 1vh 1vw 1vh 1vw;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  border-radius: 35px;
+}
+
+.image-wrapper img:hover {
+    transform: translateY(-8px);
+}
+
+
+.image-caption {
+  margin-top: 5px; 
+  font-size: 1.25em;
+  color: #333; 
+}
